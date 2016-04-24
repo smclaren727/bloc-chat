@@ -11,11 +11,16 @@
         url: '/',
         controller: 'LandingCtrl as landing',
         templateUrl: '/templates/landing.html'
-      });
+      })
 
+      .state('newroom', {
+        url: '/',
+        controller: 'NewRoomCtrl as newroom',
+        templateUrl: '/templates/newroom.html'
+      });
   }
 
   angular
-    .module('blocChat',['ui.router','firebase'])
+    .module('blocChat',['ui.router','ui.bootstrap','firebase'])
     .config(config);
 })();
