@@ -4,7 +4,11 @@
     var rooms = $firebaseArray(firebaseRef.child('rooms'));
 
     return {
-      all: rooms
+      all: rooms,
+      getMessages: function(roomId) {
+        var msgRef = firebaseRef.child('messages').orderByChild('roomId').equalTo(Number(roomId));
+          return $firebaseArray(msgRef);
+      }
     };
   }
 

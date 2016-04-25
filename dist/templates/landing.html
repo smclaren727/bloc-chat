@@ -1,4 +1,9 @@
-<container class="list">
+<section class="list">
     <h1 class="app-title">{{ landing.title }} <button type="button" class="btn btn-default" ng-click="landing.open()">New Room</button></h1>
-    <h2 class="app-rooms" ng-repeat="room in landing.rooms">{{ room.$value }}</h2>
-</container>
+    <a ng-repeat="room in landing.rooms" ng-click="landing.setRoom(room)"><h2>{{ room.$value }}</h2></a>
+</section>
+
+<section class="messages">
+    <h2 class="room-title-text">{{landing.roomName}}</h2>
+    <p ng-repeat="message in landing.messages">{{message.username}}: {{message.content}}</p>
+</section>
