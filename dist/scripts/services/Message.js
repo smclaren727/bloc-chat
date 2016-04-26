@@ -2,7 +2,7 @@
   function Message(Room,$firebaseArray, $cookies) {
     var firebaseRef = new Firebase("https://popping-heat-4199.firebaseio.com/");
     var messages = $firebaseArray(firebaseRef.child('messages'));
-    var messageDate= new Date();
+    var messageDate = new Date();
 
     return {
       send: function(newMessage, currentRoomId) {

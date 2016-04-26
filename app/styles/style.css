@@ -8,7 +8,7 @@
 }
 
 .room {
-    position: absolute;
+    position: center;
     top: 0px;
     left: 0px;
     width: 25%;
@@ -19,5 +19,15 @@
 	float: right;
 	width: 65%;
 	height: 100%;
+  background-color: grey;
+}
+
+.form-inline {
+  position:fixed;
+  bottom:0;
+  min-width: 0;
+  width: auto;
+  display: inline;
+  background-color: light-blue;
 }
 

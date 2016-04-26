@@ -2,7 +2,7 @@
   function NewRoomCtrl($firebaseArray, $uibModalInstance) {
     var nr = this;
     nr.title = "Create A Room";
-    nr.roomName = "";
+    nr.roomName = " ";
 
     var firebaseRef = new Firebase("https://popping-heat-4199.firebaseio.com/");
     var rooms = $firebaseArray(firebaseRef.child('rooms'));

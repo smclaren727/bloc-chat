@@ -23,8 +23,7 @@
                   url: '/',
                   controller: 'LoginCtrl as login',
                   templateUrl: '/templates/login.html'
-    });
-
+          });
     }
 
     function BlocChatCookies($cookies,$uibModal) {

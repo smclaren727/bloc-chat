@@ -1,7 +1,7 @@
 (function() {
   function LoginCtrl($uibModalInstance,$cookies) {
     this.title = "Enter Username";
-    this.username = "";
+    this.username = " ";
     this.changeUsername = function() {
       if(this.username === "") {
         null }
